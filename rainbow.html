@@ -1,12 +1,948 @@
-!DOCTYPE html>
-<html>
-  <head>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Rainbow Rental Web</title>
-  </head>
-  <body>
-    <h1> Branching </h1>
-    <h2> A website to practice branching with Git. </h2>
-    <p> This page has been created in order to practice branching with Git and GitHub. By creating branches, we can work on different versions of the same code in the same repository simultaneously!  </p>
-  </body>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <link rel="shortcut icon" href="logo1.png">
+        <title>Rainbow Rental Web</title>
+                        <script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Ubuntu']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+                        <link rel='dns-prefetch' href='//maps.googleapis.com' />
+<link rel='dns-prefetch' href='//modeltheme.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="UrbanPoint Theme &raquo; Feed" href="https://urbanpoint.modeltheme.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="UrbanPoint Theme &raquo; Comments Feed" href="https://urbanpoint.modeltheme.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/urbanpoint.modeltheme.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.2"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='js_composer_front-css'  href='https://urbanpoint.modeltheme.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://urbanpoint.modeltheme.com/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://urbanpoint.modeltheme.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.9' type='text/css' media='all' />
+<link rel='stylesheet' id='style-shortcodes-inc-css'  href='https://urbanpoint.modeltheme.com/wp-content/plugins/modeltheme-framework/inc/shortcodes/shortcodes.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='style-mt-mega-menu-css'  href='https://urbanpoint.modeltheme.com/wp-content/plugins/modeltheme-framework/css/mt-mega-menu.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='style-select2-css'  href='https://urbanpoint.modeltheme.com/wp-content/plugins/modeltheme-framework/css/select2.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='style-animations-css'  href='https://urbanpoint.modeltheme.com/wp-content/plugins/modeltheme-framework/css/animations.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='modelthemes-frontend-bar-css'  href='//modeltheme.com/json/modelthemes-frontend-bar.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://urbanpoint.modeltheme.com/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.2.15' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='font-awesome-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/font-awesome.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='urbanpointwp-responsive-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/responsive.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='urbanpointwp-media-screens-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/media-screens.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/owl.carousel.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/owl.theme.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/animate.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='urbanpointwp-style-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/styles.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='urbanpointwp-mt-style-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/style.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='urbanpointwp-header-style-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/styles-headers.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='urbanpointwp-footer-style-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/styles-footer.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sidebarEffects-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/sidebarEffects.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='loaders-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/loaders.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='rippler-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/rippler.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-line-icons-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/simple-line-icons.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/js_composer.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='urbanpointwp-gutenberg-frontend-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/gutenberg-frontend.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='urbanpointwp-fonts-css'  href='//fonts.googleapis.com/css?family=Ubuntu%3A300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2Cgreek%2Clatin-ext%2Cgreek-ext%2Ccyrillic-ext%2Clatin%2Ccyrillic&#038;ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='urbanpointwp-custom-style-css'  href='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/css/custom-editor-style.css?ver=5.4.2' type='text/css' media='all' />
+<style id='urbanpointwp-custom-style-inline-css' type='text/css'>
+body .urbanpointwp_preloader_holder{
+					background-color: #252525;
+        		}
+			.is_header_semitransparent .navbar-default {
+			    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+			}
+			.is_header_semitransparent .sticky-wrapper.is-sticky .navbar-default {
+			    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+			}.back-to-top {
+				background: transparent url(https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/images/mt-to-top-arrow.svg) no-repeat center center;
+			}
+    		.breadcrumb a::after {
+	        	content: "/";
+	    	}
+		    .logo img,
+		    .navbar-header .logo img {
+		        max-width: 140px;
+		    }
+
+		    ::selection{
+		        color: #ffffff;
+		        background: #009dde;
+		    }
+		    ::-moz-selection { /* Code for Firefox */
+		        color: #ffffff;
+		        background: #009dde;
+		    }
+
+		    a{
+		        color: #009dde;
+		    }
+		    a:focus,
+		    a:visited,
+		    a:hover{
+		        color: #007fb2;
+		    }
+
+		    /*------------------------------------------------------------------
+		        COLOR
+		    ------------------------------------------------------------------*/
+		    a, 
+		    a:hover, 
+		    a:focus,
+		    .mt_car--tax-type,
+		    span.amount,
+		    .widget_popular_recent_tabs .nav-tabs li.active a,
+		    .widget_product_categories .cat-item:hover,
+		    .widget_product_categories .cat-item a:hover,
+		    .widget_archive li:hover,
+		    .widget_archive li a:hover,
+		    .widget_categories .cat-item:hover,
+		    .widget_categories li a:hover,
+		    .pricing-table.recomended .button.solid-button, 
+		    .pricing-table .table-content:hover .button.solid-button,
+		    .pricing-table.Recommended .button.solid-button, 
+		    .pricing-table.recommended .button.solid-button, 
+		    #sync2 .owl-item.synced .post_slider_title,
+		    #sync2 .owl-item:hover .post_slider_title,
+		    #sync2 .owl-item:active .post_slider_title,
+		    .pricing-table.recomended .button.solid-button, 
+		    .pricing-table .table-content:hover .button.solid-button,
+		    .testimonial-author,
+		    .testimonials-container blockquote::before,
+		    .testimonials-container blockquote::after,
+		    .post-author > a,
+		    h2 span,
+		    label.error,
+		    .author-name,
+		    .prev-next-post a:hover,
+		    .prev-text,
+		    .wpb_button.btn-filled:hover,
+		    .next-text,
+		    .social ul li a:hover i,
+		    .wpcf7-form span.wpcf7-not-valid-tip,
+		    .text-dark .statistics .stats-head *,
+		    .wpb_button.btn-filled,
+		    footer ul.menu li.menu-item a:hover,
+		    .widget_meta a:hover,
+		    .widget_pages a:hover,
+		    .simple_sermon_content_top h4,
+		    .mt_cars--single-main-pic .post-name > a,
+		    .widget_recent_entries_with_thumbnail li:hover a,
+		    .widget_recent_entries li a:hover,
+		    .sidebar-content .widget_nav_menu li a:hover{
+		        color: #009dde; /*Color: Main blue*/
+		    }
+
+
+		    /*------------------------------------------------------------------
+		        BACKGROUND + BACKGROUND-COLOR
+		    ------------------------------------------------------------------*/
+		    .tagcloud > a:hover,
+		    .modeltheme-icon-search,
+		    .wpb_button::after,
+		    .rotate45,
+		    .latest-posts .post-date-day,
+		    .latest-posts h3, 
+		    .latest-tweets h3, 
+		    .latest-videos h3,
+		    .button.solid-button, 
+		    button.vc_btn,
+		    .pricing-table.recomended .table-content, 
+		    .pricing-table .table-content:hover,
+		    .pricing-table.Recommended .table-content, 
+		    .pricing-table.recommended .table-content, 
+		    .pricing-table.recomended .table-content, 
+		    .pricing-table .table-content:hover,
+		    .block-triangle,
+		    .owl-theme .owl-controls .owl-page span,
+		    body .vc_btn.vc_btn-blue, 
+		    body a.vc_btn.vc_btn-blue, 
+		    body button.vc_btn.vc_btn-blue,
+		    .pagination .page-numbers.current,
+		    .pagination .page-numbers:hover,
+		    #subscribe > button[type='submit'],
+		    .social-sharer > li:hover,
+		    .prev-next-post a:hover .rotate45,
+		    .masonry_banner.default-skin,
+		    .form-submit input,
+		    .member-header::before, 
+		    .member-header::after,
+		    .member-footer .social::before, 
+		    .member-footer .social::after,
+		    .subscribe > button[type='submit'],
+		    .no-results input[type='submit'],
+		    h3#reply-title::after,
+		    .newspaper-info,
+		    header.header1 .header-nav-actions .shop_cart,
+		    .categories_shortcode .owl-controls .owl-buttons i:hover,
+		    .widget-title:after,
+		    h2.heading-bottom:after,
+		    .single .content-car-heading:after,
+		    .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_header.ui-state-active,
+		    #primary .main-content ul li:not(.rotate45)::before,
+		    .wpcf7-form .wpcf7-submit,
+		    ul.ecs-event-list li span,
+		    #contact_form2 .solid-button.button,
+		    .navbar-default .navbar-toggle .icon-bar,
+		    .details-container > div.details-item .amount, .details-container > div.details-item ins,
+		    .modeltheme-search .search-submit,
+		    .pricing-table.recommended .table-content .title-pricing,
+		    .pricing-table .table-content:hover .title-pricing,
+		    .pricing-table.recommended .button.solid-button,
+		    #navbar ul.sub-menu li a:hover,
+		    .list-view .post-details .post-excerpt .more-link,
+		    .post-category-date a[rel="tag"],
+		    #navbar .mt-icon-list-item:hover,
+		    .mt_car--single-gallery.mt_car--featured-single-gallery:hover,
+		    footer .mc4wp-form-fields input[type="submit"],
+		    .pricing-table .table-content:hover .button.solid-button,
+		    footer .footer-top .menu .menu-item a::before,
+		    .mt-car-search .submit .form-control,
+		    .post-password-form input[type='submit'] {
+		        background: #009dde;
+		    }
+
+		    .modeltheme-search.modeltheme-search-open .modeltheme-icon-search, 
+		    .no-js .modeltheme-search .modeltheme-icon-search,
+		    .modeltheme-icon-search:hover,
+		    .latest-posts .post-date-month,
+		    .button.solid-button:hover,
+		    body .vc_btn.vc_btn-blue:hover, 
+		    body a.vc_btn.vc_btn-blue:hover, 
+		    .post-category-date a[rel="tag"]:hover,
+		    .single-post-tags > a:hover,
+		    body button.vc_btn.vc_btn-blue:hover,
+		    .mt-car-search .submit .form-control:hover,
+		    #contact_form2 .solid-button.button:hover,
+		    .subscribe > button[type='submit']:hover,
+		    footer .mc4wp-form-fields input[type="submit"]:hover,
+		    .no-results input[type='submit']:hover,
+		    ul.ecs-event-list li span:hover,
+		    .pricing-table.recommended .table-content .price_circle,
+		    .pricing-table .table-content:hover .price_circle,
+		    #modal-search-form .modal-content input.search-input,
+		    .wpcf7-form .wpcf7-submit:hover,
+		    .form-submit input:hover,
+		    .pricing-table.recommended .button.solid-button:hover,
+		    .error-return-home.text-center > a:hover,
+		    .pricing-table .table-content:hover .button.solid-button:hover,
+		    .post-password-form input[type='submit']:hover {
+		        background: #252525;
+		    }
+		    .tagcloud > a:hover{
+		        background: #252525 !important;
+		    }
+
+		    .flickr_badge_image a::after,
+		    .thumbnail-overlay,
+		    .portfolio-hover,
+		    .pastor-image-content .details-holder,
+		    .item-description .holder-top,
+		    blockquote::before {
+		        background: .95;
+		    }
+
+		    /*------------------------------------------------------------------
+		        BORDER-COLOR
+		    ------------------------------------------------------------------*/
+		    .comment-form input, 
+		    .comment-form textarea,
+		    .author-bio,
+		    blockquote,
+		    .widget_popular_recent_tabs .nav-tabs > li.active,
+		    body .left-border, 
+		    body .right-border,
+		    body .member-header,
+		    body .member-footer .social,
+		    body .button[type='submit'],
+		    .navbar ul li ul.sub-menu,
+		    .wpb_content_element .wpb_tabs_nav li.ui-tabs-active,
+		    #contact-us .form-control:focus,
+		    .sale_banner_holder:hover,
+		    .testimonial-img,
+		    .wpcf7-form input:focus, 
+		    .wpcf7-form textarea:focus,
+		    .navbar-default .navbar-toggle:hover, 
+		    .header_search_form,
+		    .navbar-default .navbar-toggle{
+		        border-color: #009dde; /*Color: Main blue */
+		    }
+</style>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.2.15'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.2.15'></script>
+<link rel='https://api.w.org/' href='https://urbanpoint.modeltheme.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://urbanpoint.modeltheme.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://urbanpoint.modeltheme.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.4.2" />
+<link rel="canonical" href="https://urbanpoint.modeltheme.com/" />
+<link rel='shortlink' href='https://urbanpoint.modeltheme.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://urbanpoint.modeltheme.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Furbanpoint.modeltheme.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://urbanpoint.modeltheme.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Furbanpoint.modeltheme.com%2F&#038;format=xml" />
+<!--[if IE 9]> <script>var _gambitParallaxIE9 = true;</script> <![endif]--><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<meta name="generator" content="Powered by Slider Revolution 6.2.15 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script type="text/javascript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {				 
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
+				try {								
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+					if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+						newh = Math.max(e.mh,window.RSIH);					
+					else{					
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,						
+							sl;					
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];									
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}				
+					if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+					document.getElementById(e.c).height = newh+"px";
+					window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}					   
+			//});
+		  };</script>
+<style type="text/css" title="dynamic-css" class="options-output">.urbanpointwp_preloader_holder{background-color:#009dde;}.fixed-sidebar-menu{background-color:rgba(37,37,37,0.95);}#navbar .menu-item > a,
+                                .navbar-nav .search_products a,
+                                .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
+                                .navbar-default .navbar-nav > li > a{color:#252525;}#navbar .menu-item.selected > a, #navbar .menu-item:hover > a{color:#009dde;}#navbar .sub-menu, .navbar ul li ul.sub-menu{background-color:#f7f7f7;}#navbar ul.sub-menu li a{color:#252525;}#navbar ul.sub-menu li a:hover{background-color:transparent;}#navbar ul.sub-menu li a:hover{color:#009dde;}body{font-family:Ubuntu;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading body{opacity: 0;}.ie.wf-loading body{visibility: hidden;}h1,h1 span{font-family:Ubuntu;font-size:36px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h1,.wf-loading h1 span{opacity: 0;}.ie.wf-loading h1,.ie.wf-loading h1 span{visibility: hidden;}h2{font-family:Ubuntu;font-size:30px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h2{opacity: 0;}.ie.wf-loading h2{visibility: hidden;}h3{font-family:Ubuntu;font-size:24px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h3{opacity: 0;}.ie.wf-loading h3{visibility: hidden;}h4{font-family:Ubuntu;font-size:18px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h4{opacity: 0;}.ie.wf-loading h4{visibility: hidden;}h5{font-family:Ubuntu;font-size:14px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h5{opacity: 0;}.ie.wf-loading h5{visibility: hidden;}h6{font-family:Ubuntu;font-size:12px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h6{opacity: 0;}.ie.wf-loading h6{visibility: hidden;}input,textarea{font-family:Ubuntu;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading input,.wf-loading textarea{opacity: 0;}.ie.wf-loading input,.ie.wf-loading textarea{visibility: hidden;}input[type="submit"]{font-family:Ubuntu;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading input[type="submit"]{opacity: 0;}.ie.wf-loading input[type="submit"]{visibility: hidden;}.navbar-default{background-color:#f7f7f7;}header{color:#FFFFFF;}.fixed-sidebar-menu{background-color:rgba(255,255,255,0.95);}footer .footer-top{background-color:#252525;}footer .footer-top h1.widget-title, footer .footer-top h3.widget-title, footer .footer-top .widget-title{color:#ffffff;}.footer-row-1{padding-top:90px;padding-bottom:90px;}.footer-row-1{margin-top:0;margin-bottom:0;}.footer-row-1{border-top:0px solid #515b5e;border-bottom:0px solid #515b5e;border-left:0px solid #515b5e;border-right:0px solid #515b5e;}footer .footer{background-color:#303030;}footer .footer h1.widget-title, footer .footer h3.widget-title, footer .footer .widget-title{color:#ffffff;}.single article .article-content p{font-family:Ubuntu;line-height:29px;color:#454646;font-size:18px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading .single article .article-content p{opacity: 0;}.ie.wf-loading .single article .article-content p{visibility: hidden;}.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab.vc_active > a{color:#666666;}.vc_tta-color-grey.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels,
+                                            .vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab.vc_active > a{background-color:#f8f8f8;}.vc_tta-color-grey.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels, 
+                                        .vc_tta-color-grey.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels::after, 
+                                        .vc_tta-color-grey.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels::before,
+                                        .vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab.vc_active > a{border-color:#f0f0f0;}.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab > a{color:#666666;}.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab > a{background-color:#ebebeb;}.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab > a{border-color:#e3e3e3;}blockquote{background-color:#f6f6f6;}blockquote{border-color:#009dde;}.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-title > a{color:#666666;}.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading{background-color:#f8f8f8;}.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading{border-color:#f0f0f0;}.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab.vc_active > a{color:#666666;}.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading,
+                                            .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body,
+                                            .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading:focus, 
+                                            .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-heading:hover{background-color:#f8f8f8;}.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-heading,
+                                        .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body, 
+                                        .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::after, 
+                                        .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body::before{border-color:#f0f0f0;}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1497354205100{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 195px !important;padding-bottom: 100px !important;}.vc_custom_1497354266102{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 107px !important;padding-bottom: 90px !important;background-color: #ffffff !important;}.vc_custom_1495468522025{margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;padding-top: 115px !important;padding-right: 0px !important;padding-bottom: 135px !important;padding-left: 0px !important;}.vc_custom_1502355497683{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 110px !important;padding-bottom: 100px !important;background-color: #f7f7f7 !important;}.vc_custom_1495527471795{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 40px !important;padding-bottom: 85px !important;background-color: #009dde !important;}.vc_custom_1497526016711{margin-top: 20px !important;padding-top: 0px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body data-rsssl=1 class="home page-template-default page page-id-869        header1   wpb-js-composer js-comp-ver-6.2.0 vc_responsive">
+    
+
+    
+
+    
+
+    
+
+    
+    <!-- PAGE #page -->
+    <div id="page" class="hfeed site">
+        <header class="header1">
+  <div class="container logo-infos">
+    <div class="row">
+
+	    <div class="col-md-8 col-sm-7">
+	    	<div class="header-infos">
+			    			      <!-- HEADER INFO 1 -->
+			      <div class="text-center header-info-group">
+			        <div class="header-info-icon pull-left text-center">
+			          			          	<p class="header_text_title">Call Us:			          			        </div>
+			        <div class="header-info-labels pull-left">
+			          <p>+250780936660</p>
+			        </div>
+			      </div>
+			      <!-- // HEADER INFO 1 -->
+			    
+			    			      <!-- HEADER INFO 2 -->
+			      <div class="text-center header-info-group">
+			        <div class="header-info-icon pull-left text-center">
+			          			          	<p class="header_text_title">Address:			          			        </div>
+			        <div class="header-info-labels pull-left">
+			          <p>Kigali,Rwanda</p>
+			        </div>
+			      </div>
+			      <!-- // HEADER INFO 2 -->
+			    
+			    
+				</div>
+	      
+		</div>
+
+	      <!-- NAV ACTIONS -->
+           <div class="navbar-collapse actions collapse col-md-4  col-sm-5">
+                <div class="header-nav-actions">
+
+                  
+                  
+                  <ul class="social-links">
+                                                    <li><a href="https://facebook.com"><i class="fa fa-facebook"></i></a></li>
+                                                                            <li><a href="https://twitter.com/envato"><i class="fa fa-twitter"></i></a></li>
+                                                                            <li><a href="https://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+                                                                            <li><a href="https://youtube.com"><i class="fa fa-youtube"></i></a></li>
+                                                                            <li><a href="https://pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+                                                                            <li><a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                                                                            <li><a href="http://urbanpointwp"><i class="fa fa-skype"></i></a></li>
+                                                                            <li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+                                                                                                                                                                                                                    </ul>
+
+
+
+                </div>
+                
+            </div>
+
+    </div>
+   </div>
+
+
+  <!-- BOTTOM BAR -->
+  <nav class="navbar navbar-default" id="modeltheme-main-head">
+    <div class="container">
+        <div class="row">
+
+          <!-- LOGO -->
+          <div class="navbar-header col-md-3">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                          <h1 class="logo">
+                  
+                      <img src="logo1.png" alt="Rainbow Theme" />
+                  
+              </h1>
+                      </div>
+
+          <!-- NAV MENU -->
+          <div id="navbar" class="navbar-collapse collapse col-md-9">
+            <ul class="menu nav navbar-nav pull-right nav-effect nav-menu">
+              <li id="menu-item-7750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7750"><a href="#">Home</a></li>
+<li id="menu-item-7880" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7880"><a href="https://urbanpoint.modeltheme.com/listings/">Listings</a>
+<ul class="sub-menu">
+	<li id="menu-item-7881" class="menu-item menu-item-type-taxonomy menu-item-object-mt-house-category menu-item-7881"><a href="https://urbanpoint.modeltheme.com/houses/sale/">For Sale Properties</a></li>
+	<li id="menu-item-7882" class="menu-item menu-item-type-taxonomy menu-item-object-mt-house-category menu-item-7882"><a href="https://urbanpoint.modeltheme.com/houses/rent/">For Rent Properties</a></li>
+	<li id="menu-item-7961" class="menu-item menu-item-type-post_type menu-item-object-mt_house menu-item-7961"><a href="https://urbanpoint.modeltheme.com/house/villa-for-numerous-families/">Single Property</a></li>
+</ul>
+</li>
+<li id="menu-item-7959" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7959"><a href="#">Properties by Location</a>
+<ul class="sub-menu">
+	<li id="menu-item-7955" class="menu-item menu-item-type-taxonomy menu-item-object-mt-house-location menu-item-7955"><a href="https://urbanpoint.modeltheme.com/house-location/los-angeles/">Los Angeles</a></li>
+	<li id="menu-item-7956" class="menu-item menu-item-type-taxonomy menu-item-object-mt-house-location menu-item-7956"><a href="https://urbanpoint.modeltheme.com/house-location/new-york/">New York</a></li>
+	<li id="menu-item-7957" class="menu-item menu-item-type-taxonomy menu-item-object-mt-house-location menu-item-7957"><a href="https://urbanpoint.modeltheme.com/house-location/san-francisco/">San Francisco</a></li>
+	<li id="menu-item-7958" class="menu-item menu-item-type-taxonomy menu-item-object-mt-house-location menu-item-7958"><a href="https://urbanpoint.modeltheme.com/house-location/barcelona/">Barcelona</a></li>
+</ul>
+</li>
+<li id="menu-item-7753" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7753"><a href="https://urbanpoint.modeltheme.com/blog/">Blog</a></li>
+<li id="menu-item-8295" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8295"><a href="#">Pages</a>
+<ul class="sub-menu">
+	<li id="menu-item-7754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7754"><a href="https://urbanpoint.modeltheme.com/about-us/">About</a></li>
+	<li id="menu-item-8294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8294"><a href="https://urbanpoint.modeltheme.com/contact-us/">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-8293" class="selected_menu_item menu-item menu-item-type-post_type menu-item-object-page menu-item-8293"><a href="https://urbanpoint.modeltheme.com/featured-house/">Featured House</a></li>
+<li id="menu-item-8257" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8257"><a href="https://modeltheme.com/go/purchase-urbanpoint-theme/"><i class="icon-basket-loaded icons"></i> Purchase Theme</a></li>
+            </ul>
+          </div>
+
+        </div>
+    </div>
+  </nav>
+</header>
+
+        	    
+    <!-- HEADER TITLE BREADCRUBS SECTION -->
+    
+    <!-- Page content -->
+    <div id="primary" class="no-padding content-area no-sidebar">
+        <div class="container">
+            <div class="row">
+                <main id="main" class="col-md-12 site-main main-content">
+                    
+                        
+<article id="post-869" class="post-869 page type-page status-publish hentry">
+
+	<div class="entry-content">
+		<div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1497354205100"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class='gambit_background_row' style='background-color: rgba(0,0,0,0.4);background-size: cover;background-position: center;'></div><div class='gambit_parallax_row' data-bg-align='' data-direction='up' data-opacity='100' data-velocity='-0.1' data-mobile-enabled='' data-bg-height='1000' data-bg-width='1920' data-bg-image='https://urbanpoint.modeltheme.com/wp-content/uploads/2016/02/theme_urbanpoint_img2.jpg' data-bg-repeat='false' data-id='' style='display: none'></div><div class="title-subtile-holder"><h1 class="section-title light_title">Find Your Property</h1><div class="section-border light_border"></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-1"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-10"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="mt-car-search wow fadeInUp ">
+                <form method="GET" action="https://urbanpoint.modeltheme.com/">
+                  <input type="hidden" name="post_type" value="mt_house" />
+                  <div class="row">
+
+                    
+                    
+                    <div class="slider-state-select col-md-3 ">
+                      <select name="mt-house-category" class="select-car-category form-control"><option value=''>Choose House Scope</option><option value='rent'>Rent</option><option value='sale'>Sale</option></select>
+                    </div>  
+
+                    <div class="slider-state-select col-md-3 ">          
+                      <select name="mt-house-type" class="select-car-type form-control"><option value=''>Choose House Type</option><option value='apartment'>Apartment</option><option value='duplex'>Duplex</option><option value='penthouse'>Penthouse</option><option value='villa'>Villa</option></select>
+                    </div>
+
+                    <div class="slider-state-search col-md-3 ">
+                      <input type="search" class="search-field form-control" placeholder="Search …" value="" name="s" />
+                    </div>  
+
+                    <div class="slider-state-submit col-md-3  submit">
+                      <input type="submit" value="FIND NOW" class="form-control btn btn-warning">
+                    </div>
+
+                  </div>
+                </form>
+        </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-1"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1497354266102 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="title-subtile-holder"><h1 class="section-title dark_title">Properties For Rent</h1><div class="section-border dark_border"></div><div class="section-subtitle dark_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div></div><div class="house-posts blog-posts car-posts blog-posts-shortcode"><div class="row"><div class="vc_col-sm-4 vc_col-sm-6 vc_col-xs-12">
+                      <article class="single-post single-property-listing list-view">
+                        <div class="blog_custom">
+
+                          <!-- POST THUMBNAIL -->
+                          <div class="col-md-12 post-thumbnail">
+                              <a class="relative" href="https://urbanpoint.modeltheme.com/house/luxury-modern-d-c-apartment/"><div class="grid">
+                          <figure class="effect-apollo">
+                            <img class="blog_post_image" src="https://urbanpoint.modeltheme.com/wp-content/uploads/2017/05/apartment_02-800x500.jpg" alt="Luxury Modern D.C. Apartment" />
+                            <figcaption></figcaption>
+                          </figure>
+                        </div></a>
+                          </div>
+
+                          <!-- POST DETAILS -->
+                          <div class="post-details col-md-12">
+
+
+                            <!-- <h3 class="property-post-name text-center">
+                              <a href="https://urbanpoint.modeltheme.com/house/luxury-modern-d-c-apartment/" title="Luxury Modern D.C. Apartment">Luxury Modern D.C. Apartment</a>
+                            </h3> -->
+
+
+
+                            <div class="row">
+
+                              <div class="text-left col-md-6 vc_col-sm-6 vc_col-xs-6"><p class="house_display_posts"><a href="https://urbanpoint.modeltheme.com/house-location/san-francisco/" rel="tag">San Francisco</a></p><p class="house_display_posts">2 bathrooms</p></div>
+
+                              <div class="text-right col-md-6 vc_col-sm-6 vc_col-xs-6">
+                                <p class="house_display_posts">for <a href="https://urbanpoint.modeltheme.com/houses/rent/" rel="tag">Rent</a></p><p class="house_display_posts">120&#36; per day</p></div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </article>
+                    </div><div class="vc_col-sm-4 vc_col-sm-6 vc_col-xs-12">
+                      <article class="single-post single-property-listing list-view">
+                        <div class="blog_custom">
+
+                          <!-- POST THUMBNAIL -->
+                          <div class="col-md-12 post-thumbnail">
+                              <a class="relative" href="https://urbanpoint.modeltheme.com/house/dreamy-downtown-penthouse/"><div class="grid">
+                          <figure class="effect-apollo">
+                            <img class="blog_post_image" src="https://urbanpoint.modeltheme.com/wp-content/uploads/2017/05/penthouse_01-800x500.jpg" alt="Dreamy Downtown Penthouse" />
+                            <figcaption></figcaption>
+                          </figure>
+                        </div></a>
+                          </div>
+
+                          <!-- POST DETAILS -->
+                          <div class="post-details col-md-12">
+
+
+                            <!-- <h3 class="property-post-name text-center">
+                              <a href="https://urbanpoint.modeltheme.com/house/dreamy-downtown-penthouse/" title="Dreamy Downtown Penthouse">Dreamy Downtown Penthouse</a>
+                            </h3> -->
+
+
+
+                            <div class="row">
+
+                              <div class="text-left col-md-6 vc_col-sm-6 vc_col-xs-6"><p class="house_display_posts"><a href="https://urbanpoint.modeltheme.com/house-location/los-angeles/" rel="tag">Los Angeles</a></p><p class="house_display_posts">2 bathrooms</p></div>
+
+                              <div class="text-right col-md-6 vc_col-sm-6 vc_col-xs-6">
+                                <p class="house_display_posts">for <a href="https://urbanpoint.modeltheme.com/houses/rent/" rel="tag">Rent</a></p><p class="house_display_posts">250&#36; per day</p></div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </article>
+                    </div><div class="vc_col-sm-4 vc_col-sm-6 vc_col-xs-12">
+                      <article class="single-post single-property-listing list-view">
+                        <div class="blog_custom">
+
+                          <!-- POST THUMBNAIL -->
+                          <div class="col-md-12 post-thumbnail">
+                              <a class="relative" href="https://urbanpoint.modeltheme.com/house/villa-for-numerous-families/"><div class="grid">
+                          <figure class="effect-apollo">
+                            <img class="blog_post_image" src="https://urbanpoint.modeltheme.com/wp-content/uploads/2017/05/villa_02-800x500.jpg" alt="Villa for Numerous Families" />
+                            <figcaption></figcaption>
+                          </figure>
+                        </div></a>
+                          </div>
+
+                          <!-- POST DETAILS -->
+                          <div class="post-details col-md-12">
+
+
+                            <!-- <h3 class="property-post-name text-center">
+                              <a href="https://urbanpoint.modeltheme.com/house/villa-for-numerous-families/" title="Villa for Numerous Families">Villa for Numerous Families</a>
+                            </h3> -->
+
+
+
+                            <div class="row">
+
+                              <div class="text-left col-md-6 vc_col-sm-6 vc_col-xs-6"><p class="house_display_posts"><a href="https://urbanpoint.modeltheme.com/house-location/new-york/" rel="tag">New York</a></p><p class="house_display_posts">2 bathrooms</p></div>
+
+                              <div class="text-right col-md-6 vc_col-sm-6 vc_col-xs-6">
+                                <p class="house_display_posts">for <a href="https://urbanpoint.modeltheme.com/houses/rent/" rel="tag">Rent</a></p><p class="house_display_posts">99&#36; per day</p></div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </article>
+                    </div><div class="vc_col-sm-4 vc_col-sm-6 vc_col-xs-12">
+                      <article class="single-post single-property-listing list-view">
+                        <div class="blog_custom">
+
+                          <!-- POST THUMBNAIL -->
+                          <div class="col-md-12 post-thumbnail">
+                              <a class="relative" href="https://urbanpoint.modeltheme.com/house/cozy-apartment-with-glamour/"><div class="grid">
+                          <figure class="effect-apollo">
+                            <img class="blog_post_image" src="https://urbanpoint.modeltheme.com/wp-content/uploads/2017/05/apartment_03-800x500.jpg" alt="Cozy apartment with a glamour!" />
+                            <figcaption></figcaption>
+                          </figure>
+                        </div></a>
+                          </div>
+
+                          <!-- POST DETAILS -->
+                          <div class="post-details col-md-12">
+
+
+                            <!-- <h3 class="property-post-name text-center">
+                              <a href="https://urbanpoint.modeltheme.com/house/cozy-apartment-with-glamour/" title="Cozy apartment with a glamour!">Cozy apartment with a glamour!</a>
+                            </h3> -->
+
+
+
+                            <div class="row">
+
+                              <div class="text-left col-md-6 vc_col-sm-6 vc_col-xs-6"><p class="house_display_posts"><a href="https://urbanpoint.modeltheme.com/house-location/barcelona/" rel="tag">Barcelona</a></p><p class="house_display_posts">2 bathrooms</p></div>
+
+                              <div class="text-right col-md-6 vc_col-sm-6 vc_col-xs-6">
+                                <p class="house_display_posts">for <a href="https://urbanpoint.modeltheme.com/houses/rent/" rel="tag">Rent</a></p><p class="house_display_posts">120&#36; per day</p></div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </article>
+                    </div><div class="vc_col-sm-4 vc_col-sm-6 vc_col-xs-12">
+                      <article class="single-post single-property-listing list-view">
+                        <div class="blog_custom">
+
+                          <!-- POST THUMBNAIL -->
+                          <div class="col-md-12 post-thumbnail">
+                              <a class="relative" href="https://urbanpoint.modeltheme.com/house/nearby-piazza-venezia-penthouse/"><div class="grid">
+                          <figure class="effect-apollo">
+                            <img class="blog_post_image" src="https://urbanpoint.modeltheme.com/wp-content/uploads/2017/05/penthouse_03-800x500.jpg" alt="Nearby Piazza Venezia Penthouse" />
+                            <figcaption></figcaption>
+                          </figure>
+                        </div></a>
+                          </div>
+
+                          <!-- POST DETAILS -->
+                          <div class="post-details col-md-12">
+
+
+                            <!-- <h3 class="property-post-name text-center">
+                              <a href="https://urbanpoint.modeltheme.com/house/nearby-piazza-venezia-penthouse/" title="Nearby Piazza Venezia Penthouse">Nearby Piazza Venezia Penthouse</a>
+                            </h3> -->
+
+
+
+                            <div class="row">
+
+                              <div class="text-left col-md-6 vc_col-sm-6 vc_col-xs-6"><p class="house_display_posts"><a href="https://urbanpoint.modeltheme.com/house-location/roma/" rel="tag">Roma</a></p><p class="house_display_posts">1 bathrooms</p></div>
+
+                              <div class="text-right col-md-6 vc_col-sm-6 vc_col-xs-6">
+                                <p class="house_display_posts">for <a href="https://urbanpoint.modeltheme.com/houses/rent/" rel="tag">Rent</a></p><p class="house_display_posts">189&#36; per day</p></div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </article>
+                    </div><div class="vc_col-sm-4 vc_col-sm-6 vc_col-xs-12">
+                      <article class="single-post single-property-listing list-view">
+                        <div class="blog_custom">
+
+                          <!-- POST THUMBNAIL -->
+                          <div class="col-md-12 post-thumbnail">
+                              <a class="relative" href="https://urbanpoint.modeltheme.com/house/welcome-to-301-highland-rd-kitchener/"><div class="grid">
+                          <figure class="effect-apollo">
+                            <img class="blog_post_image" src="https://urbanpoint.modeltheme.com/wp-content/uploads/2017/05/duplex_house_01-800x500.jpg" alt="Welcome to 301 Highland Rd" />
+                            <figcaption></figcaption>
+                          </figure>
+                        </div></a>
+                          </div>
+
+                          <!-- POST DETAILS -->
+                          <div class="post-details col-md-12">
+
+
+                            <!-- <h3 class="property-post-name text-center">
+                              <a href="https://urbanpoint.modeltheme.com/house/welcome-to-301-highland-rd-kitchener/" title="Welcome to 301 Highland Rd">Welcome to 301 Highland Rd</a>
+                            </h3> -->
+
+
+
+                            <div class="row">
+
+                              <div class="text-left col-md-6 vc_col-sm-6 vc_col-xs-6"><p class="house_display_posts"><a href="https://urbanpoint.modeltheme.com/house-location/paris/" rel="tag">Paris</a></p><p class="house_display_posts">3 bathrooms</p></div>
+
+                              <div class="text-right col-md-6 vc_col-sm-6 vc_col-xs-6">
+                                <p class="house_display_posts">for <a href="https://urbanpoint.modeltheme.com/houses/rent/" rel="tag">Rent</a></p><p class="house_display_posts">140&#36; per day</p></div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </article>
+                    </div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1495468522025"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class='gambit_parallax_row' data-bg-align='' data-direction='up' data-opacity='100' data-velocity='-0.2' data-mobile-enabled='' data-bg-height='697' data-bg-width='1920' data-bg-image='https://urbanpoint.modeltheme.com/wp-content/uploads/2016/02/theme_urbanpoint_img1.jpg' data-bg-repeat='false' data-id='' style='display: none'></div><script>
+                jQuery(document).ready(function() {
+                  jQuery(".popup-vimeo-video").magnificPopup({
+                  	type:"iframe",
+	              	disableOn: 700,
+					removalDelay: 160,
+					preloader: false,
+					fixedContentPos: false
+				});
+
+
+                  jQuery(".popup-vimeo-youtube").magnificPopup({
+                  	type:"iframe",
+             		disableOn: 700,
+					removalDelay: 160,
+					preloader: false,
+					fixedContentPos: false});
+                });
+                
+             /* </script><div class="mt_video text-center row"><div class="wow bounce"><a class="popup-vimeo-video" href="https://vimeo.com/180406295"><img class="buton_image_class" src="https://urbanpoint.modeltheme.com/wp-content/uploads/2016/02/theme_urbanpoint_img3.png" data-src="https://urbanpoint.modeltheme.com/wp-content/uploads/2016/02/theme_urbanpoint_img3.png" alt=""></a></div></div><h1 style="font-size: 70px;color: #ffffff;line-height: 70px;text-align: center;font-family:Ubuntu;font-weight:700;font-style:normal" class="vc_custom_heading wpb_animate_when_almost_visible wpb_appear appear" >The Modern House</h1><h3 style="font-size: 25px;color: #ffffff;line-height: 35px;text-align: center;font-family:Ubuntu;font-weight:300;font-style:normal" class="vc_custom_heading wpb_animate_when_almost_visible wpb_bottom-to-top bottom-to-top" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do diam eiusmod tempor<br /> */
+magna aliqua sed ut enim ad minim veniam, quis nostrud.</h3></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1502355497683 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1497526016711"><div class="wpb_wrapper"><h1 style="font-size: 50px;color: #252525;line-height: 60px;text-align: left;font-family:Ubuntu;font-weight:700;font-style:normal" class="vc_custom_heading wpb_animate_when_almost_visible wpb_fadeIn fadeIn" >Get in Touch</h1><div class="vc_empty_space"   style="height: 12px"><span class="vc_empty_space_inner"></span></div>
+	<div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_appear appear" >
+		<div class="wpb_wrapper">
+			<p><span style="color: #8b8b8a;"><strong>Sed ut perspiciatis unde omnis</strong> iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</span></p>
+
+		</div>
+	</div>
+<div class="vc_empty_space"   style="height: 30px"><span class="vc_empty_space_inner"></span></div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><style type="text/css" scoped>
+                .mt-icon-list-item:hover i, .mt-icon-list-item:hover {
+                    color: #009dde !important;
+                }
+              </style><div class="mt-icon-list-item"><div class="mt-icon-list-icon-holder">
+                  <div class="mt-icon-list-icon-holder-inner clearfix"><i style="margin-right:15px; color:#009dde;font-size:24px" class="fa fa-phone"></i></div>
+                </div>
+                <p class="mt-icon-list-text" style="font-size: 15pxpx; color: #252525">(+04) 743 323 424</p></div><div class="vc_empty_space"   style="height: 15px"><span class="vc_empty_space_inner"></span></div><style type="text/css" scoped>
+                .mt-icon-list-item:hover i, .mt-icon-list-item:hover {
+                    color: #009dde !important;
+                }
+              </style><div class="mt-icon-list-item"><div class="mt-icon-list-icon-holder">
+                  <div class="mt-icon-list-icon-holder-inner clearfix"><i style="margin-right:15px; color:#009dde;font-size:24px" class="fa fa-map-marker"></i></div>
+                </div>
+                <p class="mt-icon-list-text" style="font-size: 15pxpx; color: #252525">Collins Street West Victoria</p></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><style type="text/css" scoped>
+                .mt-icon-list-item:hover i, .mt-icon-list-item:hover {
+                    color: #009dde !important;
+                }
+              </style><div class="mt-icon-list-item"><div class="mt-icon-list-icon-holder">
+                  <div class="mt-icon-list-icon-holder-inner clearfix"><i style="margin-right:15px; color:#009dde;font-size:24px" class="fa fa-envelope"></i></div>
+                </div>
+                <p class="mt-icon-list-text" style="font-size: 15pxpx; color: #252525"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0e6d61607a6f6d7a4e7b7c6c6f60206d6163">[email&#160;protected]</a></p></div><div class="vc_empty_space"   style="height: 15px"><span class="vc_empty_space_inner"></span></div><style type="text/css" scoped>
+                .mt-icon-list-item:hover i, .mt-icon-list-item:hover {
+                    color: #009dde !important;
+                }
+              </style><div class="mt-icon-list-item"><div class="mt-icon-list-icon-holder">
+                  <div class="mt-icon-list-icon-holder-inner clearfix"><i style="margin-right:15px; color:#009dde;font-size:24px" class="fa fa-clock-o"></i></div>
+                </div>
+                <p class="mt-icon-list-text" style="font-size: 15pxpx; color: #252525">Mon-Sat: 9:00 - 18:00</p></div></div></div></div></div></div></div></div><div class="wpb_animate_when_almost_visible wpb_appear appear wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div role="form" class="wpcf7" id="wpcf7-f7104-p869-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response" aria-live="polite"></div>
+<form action="/#wpcf7-f7104-p869-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="7104" />
+<input type="hidden" name="_wpcf7_version" value="5.1.9" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f7104-p869-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="869" />
+</div>
+<div class="col-md-6">
+<div class="first-name-input">
+        <label>First Name</label><br />
+ 	<span class="wpcf7-form-control-wrap first-name"><input type="text" name="first-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span>
+  </div>
+<div class="email-input">
+        <label>Email Address</label><br />
+  	<span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span>
+  </div>
+</div>
+<div class="col-md-6">
+<div class="subject-input">
+        <label>Subject</label><br />
+  	<span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span>
+  </div>
+<div class="last-name-input">
+        <label>Last Name</label><br />
+  	<span class="wpcf7-form-control-wrap last-name"><input type="text" name="last-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span>
+  </div>
+</div>
+<div class="col-md-12">
+<div class="message-input">
+        <label>Message</label><br />
+  	<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="3" rows="3" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span>
+  </div>
+</div>
+<div class="col-md-12">
+  <input type="submit" value="Send Message &rarr;" class="wpcf7-form-control wpcf7-submit" />
+</div>
+<div class="wpcf7-response-output wpcf7-display-none" aria-hidden="true"></div></form></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1495527471795 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><h2 style="font-size: 30px;color: #ffffff;line-height: 45px;text-align: center;font-family:Ubuntu;font-weight:400;font-style:normal" class="vc_custom_heading wpb_animate_when_almost_visible wpb_appear appear" >Want a House or Sell one? Call Us <strong>(+250) 780936660</strong></h2></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div>
+			</div><!-- .entry-content -->
+
+	</article><!-- #post-## -->
+                        
+                                    </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+                    <!-- FOOTER TOP -->
+            <div class="row footer-top">
+                <div class="container">
+                <div class="row"><div class="col-md-12 footer-row-1"><div class="row"><div class="col-md-6 sidebar-1"><aside id="text-1" class="widget vc_column_vc_container widget_text"><h1 class="widget-title">About Us</h1>			<div class="textwidget"><p style="color: rgba(255,255,255,0.7);">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut du<br />
+aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet, ctetur elitse<br />
+adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+</div>
+		</aside><aside id="urbanpointwp_address_social_icons-1" class="widget vc_column_vc_container widget_urbanpointwp_address_social_icons">
+        <div class="sidebar-social-networks address-social-links">
+
+            
+
+                            <div class="contact-details">
+                    <p><i class="fa fa-phone" aria-hidden="true"></i>(+250) 780936660</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bdd2dbdbd4ded8fdd8c5dcd0cdd1d893ded2d0">rainbow1@gmail.com</a></p>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>Kigali, Rwanda.</p>
+                </div>
+            
+
+                        
+        </div>
+        </aside></div><div class="col-md-2 sidebar-2"><aside id="nav_menu-1" class="widget vc_column_vc_container widget_nav_menu"><h1 class="widget-title">Useful Links</h1><div class="menu-footer-menu-1-container"><ul id="menu-footer-menu-1" class="menu"><li id="menu-item-7757" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7757"><a href="https://urbanpoint.modeltheme.com/about-us/">About Us</a></li>
+<li id="menu-item-7781" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7781"><a href="https://urbanpoint.modeltheme.com/blog/">Blog</a></li>
+<li id="menu-item-7819" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7819"><a href="https://urbanpoint.modeltheme.com/pricings/">Pricings</a></li>
+<li id="menu-item-7782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7782"><a href="https://urbanpoint.modeltheme.com/contact-us/">Contact us</a></li>
+<li id="menu-item-8259" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8259"><a href="https://themeforest.net/item/urbanpoint-house-selling-rental-wordpress-theme/20033439"><i class="icon-basket-loaded icons"></i> Purchase Theme</a></li>
+</ul></div></aside></div><div class="col-md-2 sidebar-3"><aside id="nav_menu-2" class="widget vc_column_vc_container widget_nav_menu"><h1 class="widget-title">Rent with Us</h1><div class="menu-footer-menu-2-container"><ul id="menu-footer-menu-2" class="menu"><li id="menu-item-7812" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7812"><a href="#">Rent a House</a></li>
+<li id="menu-item-7815" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7815"><a href="#">Book Now</a></li>
+<li id="menu-item-7822" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7822"><a href="#">Book your Rooms</a></li>
+<li id="menu-item-7816" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7816"><a href="#">Buy your Place</a></li>
+<li id="menu-item-7820" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7820"><a href="#">Privacy policy</a></li>
+<li id="menu-item-7821" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7821"><a href="#">Terms and Conditions</a></li>
+</ul></div></aside></div><div class="col-md-2 sidebar-4"><aside id="urbanpointwp_post_thumbnails_slider-1" class="widget vc_column_vc_container widget_urbanpointwp_post_thumbnails_slider"><h1 class="widget-title">Latest News</h1><div class="slider_holder relative"><div class="slider_navigation absolute"><a class="btn prev pull-left"><i class="fa fa-angle-left"></i></a><a class="btn next pull-right"><i class="fa fa-angle-right"></i></a></div><div class="post_thumbnails_slider owl-carousel owl-theme"><div class="item"><a href="https://urbanpoint.modeltheme.com/great-service/"><img src="https://urbanpoint.modeltheme.com/wp-content/uploads/2017/05/apartment_01-700x450.jpg" alt="Great Service" /></a></div><div class="item"><a href="https://urbanpoint.modeltheme.com/own-creativity/"><img src="https://urbanpoint.modeltheme.com/wp-content/uploads/2017/05/bathroom_01-700x450.jpg" alt="Horsepower Trip" /></a></div><div class="item"><a href="https://urbanpoint.modeltheme.com/abstract-thinking/"><img src="https://urbanpoint.modeltheme.com/wp-content/uploads/2017/05/bedroom-1-700x450.jpg" alt="Give your car a facelift" /></a></div><div class="item"><a href="https://urbanpoint.modeltheme.com/boost-imagination/"><img src="https://urbanpoint.modeltheme.com/wp-content/uploads/2017/05/living_room_01-700x450.jpg" alt="Pure Classic" /></a></div></div></div></aside></div></div></div></div><div class="row"><div class="col-md-12 footer-row-2"><div class="row"></div></div></div><div class="row"><div class="col-md-12 footer-row-3"><div class="row"></div></div></div>                </div>
+            </div>
+        
+        
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/urbanpoint.modeltheme.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.9'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/modeltheme-framework/js/mt-featured-house/modernizr-custom.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/modeltheme-framework/js/classie.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/modeltheme-framework/js/mt-plugins.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/modeltheme-framework/js/mt-skills-circle/percircle.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/modeltheme-framework/js/select2.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/modeltheme-framework/js/modeltheme-custom.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/modeltheme-framework/js/mt-video/jquery.magnific-popup.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/modeltheme-framework/js/mt-featured-house/main.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/modelthemes/js/modernizr.custom.js?ver=2.7.1'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/modelthemes/js/modelthemes-frontend-bar.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/modernizr.custom.js?ver=2.6.2'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-includes/js/jquery/jquery.form.min.js?ver=4.2.1'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/jquery.ketchup.js?ver=0.3.1'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/jquery.validation.js?ver=1.13.1'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/jquery.sticky.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/uisearch.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/jquery.parallax.js?ver=1.1.3'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/jquery.appear.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/jquery.countTo.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/sidebarEffects.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/owl.carousel.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/modernizr.viewport.js?ver=2.6.2'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/bootstrap.min.js?ver=3.3.1'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/animate.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/jquery.countdown.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/navigation.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/wow.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/jquery.sticky-kit.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/loaders.css.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA6BEpYb_LalFCLebFy2H9HhCfIWCjYmRs&#038;ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/themes/urbanpointwp/js/urbanpointwp-custom.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-includes/js/wp-embed.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.2.0'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/parallax-backgrounds-for-vc/parallax/js/min/script-min.js?ver=4.5'></script>
+<script type='text/javascript' src='https://urbanpoint.modeltheme.com/wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min.js?ver=6.2.0'></script>
+
+</body>
 </html>
